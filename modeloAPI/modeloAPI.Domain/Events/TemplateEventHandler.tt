@@ -1,0 +1,32 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+
+using MediatR;
+
+namespace TemplateCode.Domain.Events
+{
+    public class CarEventHandler :
+        INotificationHandler<CarRegisteredEvent>,
+        INotificationHandler<CarRemovedEvent>,
+        INotificationHandler<CarUpdatedEvent>
+    {
+        public Task Handle(CarRegisteredEvent notification, CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(CarRemovedEvent notification, CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(CarUpdatedEvent notification, CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
+        }
+    }
+}

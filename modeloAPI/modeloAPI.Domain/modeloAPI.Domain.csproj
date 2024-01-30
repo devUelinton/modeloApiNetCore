@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Model\" />
+    <None Remove="Interface\Repository\" />
+    <None Remove="ModelValidator\" />
+    <None Remove="FluentValidation.AspNetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\modeloAPI.Domain.Core\modeloAPI.Domain.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Commands\CommandTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CommandTemplate.txt</LastGenOutput>
+    </None>
+    <None Update="Commands\CommandTemplate.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CommandTemplate.tt</DependentUpon>
+    </None>
+    <None Update="Commands\Validations\ValidationTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ValidationTemplate.txt</LastGenOutput>
+    </None>
+    <None Update="Commands\Validations\ValidationTemplate.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ValidationTemplate.tt</DependentUpon>
+    </None>
+    <None Update="Events\TemplateEventHandler.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TemplateEventHandler.txt</LastGenOutput>
+    </None>
+    <None Update="Events\TemplateEventHandler.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TemplateEventHandler.tt</DependentUpon>
+    </None>
+    <None Update="Model\TemplateModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TemplateModel.txt</LastGenOutput>
+    </None>
+    <None Update="Model\TemplateModel.txt">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TemplateModel.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+</Project>

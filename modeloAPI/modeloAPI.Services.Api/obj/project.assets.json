@@ -1,0 +1,172 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "modeloAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "modeloAPI.Domain": "1.0.0",
+          "modeloAPI.Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/modeloAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modeloAPI.Application.dll": {}
+        }
+      },
+      "modeloAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "modeloAPI.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/modeloAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modeloAPI.Domain.dll": {}
+        }
+      },
+      "modeloAPI.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/modeloAPI.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modeloAPI.Domain.Core.dll": {}
+        }
+      },
+      "modeloAPI.Infra.CrossCutting.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "modeloAPI.Application": "1.0.0",
+          "modeloAPI.Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/modeloAPI.Infra.CrossCutting.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modeloAPI.Infra.CrossCutting.IoC.dll": {}
+        }
+      },
+      "modeloAPI.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "modeloAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/modeloAPI.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modeloAPI.Infra.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "modeloAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "../modeloAPI.Application/modeloAPI.Application.csproj",
+      "msbuildProject": "../modeloAPI.Application/modeloAPI.Application.csproj"
+    },
+    "modeloAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modeloAPI.Domain/modeloAPI.Domain.csproj",
+      "msbuildProject": "../modeloAPI.Domain/modeloAPI.Domain.csproj"
+    },
+    "modeloAPI.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../modeloAPI.Domain.Core/modeloAPI.Domain.Core.csproj",
+      "msbuildProject": "../modeloAPI.Domain.Core/modeloAPI.Domain.Core.csproj"
+    },
+    "modeloAPI.Infra.CrossCutting.IoC/1.0.0": {
+      "type": "project",
+      "path": "../modeloAPI.Infra.CrossCutting.IoC/modeloAPI.Infra.CrossCutting.IoC.csproj",
+      "msbuildProject": "../modeloAPI.Infra.CrossCutting.IoC/modeloAPI.Infra.CrossCutting.IoC.csproj"
+    },
+    "modeloAPI.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../modeloAPI.Infra.Data/modeloAPI.Infra.Data.csproj",
+      "msbuildProject": "../modeloAPI.Infra.Data/modeloAPI.Infra.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "modeloAPI.Application >= 1.0.0",
+      "modeloAPI.Infra.CrossCutting.IoC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\uelin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Services.Api\\modeloAPI.Services.Api.csproj",
+      "projectName": "modeloAPI.Services.Api",
+      "projectPath": "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Services.Api\\modeloAPI.Services.Api.csproj",
+      "packagesPath": "C:\\Users\\uelin\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Services.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\uelin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Application\\modeloAPI.Application.csproj": {
+              "projectPath": "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Application\\modeloAPI.Application.csproj"
+            },
+            "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Infra.CrossCutting.IoC\\modeloAPI.Infra.CrossCutting.IoC.csproj": {
+              "projectPath": "C:\\Projetos\\modeloapi\\modeloAPI\\modeloAPI.Infra.CrossCutting.IoC\\modeloAPI.Infra.CrossCutting.IoC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+﻿
+using FluentValidation;
+
+namespace TemplateCode.Domain.Commands.Validations
+{
+    public class TemplateValidation<T> : AbstractValidator<T> where T : TemplateCommand
+    {
+        public TemplateValidation()
+        {
+            //RuleFor(x => x.)
+        }
+    }
+}

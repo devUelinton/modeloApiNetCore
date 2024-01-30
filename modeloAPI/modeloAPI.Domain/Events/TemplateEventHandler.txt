@@ -1,0 +1,26 @@
+﻿
+using MediatR;
+
+namespace TemplateCode.Domain.Events
+{
+    public class CarEventHandler :
+        INotificationHandler<CarRegisteredEvent>,
+        INotificationHandler<CarRemovedEvent>,
+        INotificationHandler<CarUpdatedEvent>
+    {
+        public Task Handle(CarRegisteredEvent notification, CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(CarRemovedEvent notification, CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task Handle(CarUpdatedEvent notification, CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
+        }
+    }
+}

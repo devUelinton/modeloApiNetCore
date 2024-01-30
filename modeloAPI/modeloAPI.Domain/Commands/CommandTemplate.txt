@@ -1,0 +1,14 @@
+﻿
+using TemplateCode.Domain.Core.Messaging;
+
+namespace TemplateCode.Domain.Commands
+{
+    public abstract class TemplateCommand : Command
+    {
+        public Guid Id { get; protected set; }
+
+        public string Description { get; protected set; }
+
+        public string Plate { get; protected set; }
+    }
+}

@@ -1,0 +1,16 @@
+﻿
+namespace TemplateCode.Model
+{
+    public class TemplateModel
+    {
+        public TemplateModel(Guid id, string description)
+        {
+            Id = id;
+            Description = description;
+        }
+
+        public Guid Id { get; private set; }
+
+        public string Description { get; set; }
+    }
+}
